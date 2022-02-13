@@ -27,6 +27,8 @@ abstract class _SplashViewModelBase with Store, BaseViewModel {
       LocaleManager.prefrencesInit(),
       DeviceUtility.instance.initPackageInfo()
     ]);
+    // TODO: change this after language change
+    await LocaleManager.instance.setStringValue(PreferencesKeys.LOCALE, 'en');
 
     await Future.delayed(context!.durationNormal);
     await Future.delayed(context!.durationNormal);

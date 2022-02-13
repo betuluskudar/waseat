@@ -26,5 +26,22 @@
     "button": {
         "save": "Kaydet",
         "otherOptions": "Diğer Seçenekler"
+    },
+    "Login": {
+        "forgotPassword": "Şifremi unuttum ?",
+        "signIn": "Hesabın ile devam etmek için giriş yapın.",
+        "pleaseProvideEmail": "Lütfen geçerli bir e-posta giriniz",
+        "fieldRequired": "Bu alan geçerli",
+        "passwordValidation": "Şifre 8 ile 14 karakter arasında olmalıdır."
+    },
+    "emailAddress": "Email Adresi",
+    "Input": {
+        "email": "Email",
+        "password": "Şifre"
+    },
+    "Button": {
+        "login": "Giriş Yap"
     }
+
+    
 }

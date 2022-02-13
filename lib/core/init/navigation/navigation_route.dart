@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:waseat/view/bottomtab/view/bottom_tab_view.dart';
 import 'package:waseat/view/find_footprint/view/find_footprint_view.dart';
+import 'package:waseat/view/login/view/login_view.dart';
 
 import '../../../view/splash/view/splash_view.dart';
 import '../../components/card/not_found_navigation_widget.dart';
@@ -18,6 +19,8 @@ class NavigationRoute {
         return normalNavigate(const SplashView());
       case NavigationConstants.BOTTOMTAB:
         return normalNavigate(const BottomTabView());
+      case NavigationConstants.LOGIN:
+        return normalNavigate(LoginView());
       case NavigationConstants.FIND_FOOTPRINT:
         return normalNavigate(FindFootprintView());
       default:

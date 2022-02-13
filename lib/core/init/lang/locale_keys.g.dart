@@ -25,5 +25,17 @@ abstract class  LocaleKeys {
   static const button_save = 'button.save';
   static const button_otherOptions = 'button.otherOptions';
   static const button = 'button';
+  static const Login_forgotPassword = 'Login.forgotPassword';
+  static const Login_signIn = 'Login.signIn';
+  static const Login_pleaseProvideEmail = 'Login.pleaseProvideEmail';
+  static const Login_fieldRequired = 'Login.fieldRequired';
+  static const Login_passwordValidation = 'Login.passwordValidation';
+  static const Login = 'Login';
+  static const emailAddress = 'emailAddress';
+  static const Input_email = 'Input.email';
+  static const Input_password = 'Input.password';
+  static const Input = 'Input';
+  static const Button_login = 'Button.login';
+  static const Button = 'Button';
 
 }

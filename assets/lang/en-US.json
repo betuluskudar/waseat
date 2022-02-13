@@ -26,5 +26,23 @@
     "button": {
         "save": "Save",
         "otherOptions": "View Other Routes"
+    },
+    "Login": {
+        "forgotPassword": "Forgot password ?",
+        "signIn": "Sign in to continue with your account.",
+        "pleaseProvideEmail": "Please provide a valid email",
+        "fieldRequired": "This field required",
+        "passwordValidation": "Password should be 8 to 14 characters"
+    },
+    "emailAddress": "Email Address",
+    "Input": {
+        "email": "Email",
+        "password": "Password"
+    },
+    "Button": {
+        "login": "Login"
     }
+
+
+
 }

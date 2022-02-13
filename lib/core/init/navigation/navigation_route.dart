@@ -20,7 +20,9 @@ class NavigationRoute {
       case NavigationConstants.BOTTOMTAB:
         return normalNavigate(const BottomTabView());
       case NavigationConstants.LOGIN:
-        return normalNavigate(LoginView());
+        return normalNavigate(const LoginView());
+      // case NavigationConstants.SIGNIN:
+      //   return normalNavigate(const SigninView)));
       case NavigationConstants.FIND_FOOTPRINT:
         return normalNavigate(FindFootprintView());
       default:

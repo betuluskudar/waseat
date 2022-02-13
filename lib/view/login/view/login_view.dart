@@ -65,8 +65,12 @@ class LoginView extends StatelessWidget {
               const Spacer(flex: 2),
               ConstrainedBox(
                 constraints: BoxConstraints(
-                    minHeight: context.width * 0.14, minWidth: double.infinity),
+                    minHeight: context.width * 0.1, minWidth: double.infinity),
                 child: loginButton(context, viewModel),
+              ),
+              Expanded(
+                flex: 4,
+                child: createAccountArea(context),
               ),
               Expanded(flex: 7, child: Container())
             ],
@@ -183,6 +187,37 @@ class LoginView extends StatelessWidget {
       ),
       child: const AutoLocaleText(value: LocaleKeys.Button_login),
       onPressed: () => {viewModel.postLogin()},
+    );
+  }
+  Row createAccountArea(BuildContext context) {
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        SizedBox(
+          child: Expanded(
+            flex: 1,
+            child: Text(LocaleKeys.createAccountText.locale,
+                style: context.textTheme.headline6!.copyWith(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w400,
+                  color: context.colorScheme.primaryVariant,
+         ),
+        ),),
+      ),
+      const Spacer(),
+        GestureDetector(
+          onTap: () {},
+          child: Text(
+            LocaleKeys.Login_createAccount.locale,
+            style: context.textTheme.headline6!.copyWith(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600,
+                  color: context.colorScheme.secondary,
+             ),
+          ),
+        ),
+      ]
+      
     );
   }
 }

@@ -4,6 +4,7 @@ abstract class  LocaleKeys {
   static const lorem = 'lorem';
   static const welcome = 'welcome';
   static const somethingwentwrong = 'somethingwentwrong';
+  static const createAccountText = 'createAccountText';
   static const footprint_hello = 'footprint.hello';
   static const footprint_history = 'footprint.history';
   static const footprint_totalSteps = 'footprint.totalSteps';
@@ -33,6 +34,7 @@ abstract class  LocaleKeys {
   static const Login_pleaseProvideEmail = 'Login.pleaseProvideEmail';
   static const Login_fieldRequired = 'Login.fieldRequired';
   static const Login_passwordValidation = 'Login.passwordValidation';
+  static const Login_createAccount = 'Login.createAccount';
   static const Login = 'Login';
   static const emailAddress = 'emailAddress';
   static const Input_email = 'Input.email';

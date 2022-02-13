@@ -51,7 +51,7 @@ abstract class _LoginViewModelBase with Store, BaseViewModel {
   Future<void> postLogin() async {
     isLoadingChange();
     inspect(emailController!.text);
-   inspect(passwordController!.text);
+    inspect(passwordController!.text);
 
 
     final response = await loginService.postLogin(

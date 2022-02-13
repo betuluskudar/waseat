@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kartal/kartal.dart';
 import 'package:mobx/mobx.dart';
+import 'package:waseat/core/constants/enums/preferences_keys_enum.dart';
 
 import '../../../../core/base/viewmodel/base_view_model.dart';
 import '../../../../core/constants/navigation/navigation_constants.dart';
@@ -29,8 +30,9 @@ abstract class _SplashViewModelBase with Store, BaseViewModel {
 
     await Future.delayed(context!.durationNormal);
     await Future.delayed(context!.durationNormal);
-
-    // TODO: change the navigation root
-    await navigation.navigateToPageClear(path: NavigationConstants.LOGIN);
+    if (localeManager.getStringValue(PreferencesKeys.TOKEN).isEmpty){
+      await navigation.navigateToPageClear(path: NavigationConstants.LOGIN);
+    }
+    else {await navigation.navigateToPageClear(path: NavigationConstants.LOGIN);}
   }
 }

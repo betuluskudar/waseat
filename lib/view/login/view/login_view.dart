@@ -116,7 +116,7 @@ class LoginView extends StatelessWidget {
                 ? null
                 : LocaleKeys.Login_pleaseProvideEmail,
           ),
-          const SizedBox(height: 10),
+          const SizedBox(height: 30),
           Observer(builder: (_) {
             return TextFormField(
               controller: viewModel.passwordController,

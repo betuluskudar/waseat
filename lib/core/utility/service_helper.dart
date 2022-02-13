@@ -1,3 +1,4 @@
+import 'dart:developer';
 import 'dart:io';
 
 import 'package:easy_localization/src/public_ext.dart';
@@ -34,6 +35,7 @@ abstract class ServiceHelper {
     dynamic dataModelJson;
 
     if (dataModel != null) {
+      inspect(dataModel);
       dataModelJson = dataModel.toJson();
     }
 

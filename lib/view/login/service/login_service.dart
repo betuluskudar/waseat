@@ -12,14 +12,14 @@ class LoginService extends ILoginService with ServiceHelper {
 
   @override
   Future<BaseResponseModel?> postLogin(LoginModel model) async {
-    // var response = await requestJson(
-    //   manager,
-    //   NetworkRoutes.LOGIN,
-    //   RequestType.POST,
-    //   dataModel: model,
-    //   token: false,
-    // );
-    // return response;
+    var response = await requestJson(
+      manager,
+      NetworkRoutes.LOGIN,
+      RequestType.POST,
+      dataModel: model,
+      token: false,
+    );
+    return response;
   }
 
   @override
